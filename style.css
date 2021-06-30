@@ -1,0 +1,30 @@
+.links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.link {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px #ccc;
+    text-align: center;
+    color: rgb(105, 104, 104);
+    font-size: 1.5rem;
+}
+
+.link span {
+    margin: 10px;
+}
+
+@media (max-width: 450px) {
+    .links {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}
+
